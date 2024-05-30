@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm
+     bg-warning navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="../Img/DBZ.jpg" alt="Avatar logo" style="width: 100px;" class="rounded-pill">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://gogoanime.org.za/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://gogoanime.org.za/">Movies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://gogoanime.org.za/series/">Popular</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Anime list</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Recent</a></li>
+                            <li><a class="dropdown-item" href="#">Most watched</a></li>
+                            <li><a class="dropdown-item" href="#">High Rated</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="text" placeholder="Search">
+                    <button class="btn btn-primary" type="button">Search</button>
+                  </form>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid bg-dark text-center mt-3">
+        <h1 class="text-light">Anime</h1>
+    </div>
+    <div id="goku" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#goku" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#goku" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#goku" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../Img/giphy (1).gif" alt="" class="d-block" width="100%" height="500px">
+            </div>
+            <div class="carousel-item">
+                <img src="../Img/naruto.webp" alt="" class="d-block" width="100%"height="500px">
+            </div>
+            <div class="carousel-item">
+                <img src="../Img/giphy (2).gif" alt="" class="d-block" width="100%"height="500px">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#goku" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#goku" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+    <div class="container-fluid text-center bg-secondary mt-2">
+        <div class="row pt-3 d-flex justify-content-center">
+            <div class="col-sm-3 pt-3 d-flex justify-content-center">
+                <div class="card text-center bg-warning" style="width:400px; height: 100%;">
+               <img src="../Img/DBZ.jpg" alt="" height="40%" width="30%" class="card-img-top">
+            <div class="card-body">
+                <div class="card-title text-danger"><h3>Dragon Ball Z</h3></div>
+                <p class="text-light">Dragon Ball Z continues the adventures of Son Goku in his adult life as he and his companions defend the Earth against villains including aliens (Vegeta, Frieza), androids (Cell), and magical creatures (Majin Buu). At the same time, the story follows the life of Goku's son, Gohan, as well as the development of his rivals, Piccolo and Vegeta.</p>
+                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#MyAnime">
+                    click
+                  </button>
+                <div class="modal" id="MyAnime">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title">My Anime</h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="../Img/giphy (1).gif" alt="" height="500px" width="450px">
+                                <p>my first anime</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-success" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            </div>
+            <div class="col-sm-3 pt-3 d-flex justify-content-center">
+                <div class="card text-center bg-warning" style="width:400px; height: 100%;">
+               <img src="../Img/giphy.gif" alt="" height="40%" width="30%" class="card-img-top">
+            <div class="card-body">
+                <div class="card-title text-danger"><h3 class="fst-italic">Naruto</h3></div>
+                <p class="text-light">A powerful fox known as the Nine-Tails attacks Konoha, the hidden leaf village in the Land of Fire, one of the Five Great Shinobi Countries in the Ninja World. In response, the leader of Konoha and the Fourth Hokage, Minato Namikaze, at the cost of his life, seals the fox inside the body of his newborn son, Naruto Uzumaki, making him a host of the beast.</p>
+                <a href="#" class="btn btn-danger">click</a>
+            </div>
+            </div>
+            </div>
+            <div class="col-sm-3 pt-3 d-flex justify-content-center">
+                <div class="card text-center bg-warning" style="width:400px; height:100%;">
+               <img src="../Img/one-piece.jpg" alt="" height="40%" width="30%" class="card-img-top">
+            <div class="card-body">
+                <div class="card-title text-danger"><h3>One Piece</h3></div>
+                <p class="text-light">One Piece (stylized in all caps) is a Japanese manga series written and illustrated by Eiichiro Oda. It has been serialized in Shueisha's shōnen manga magazine Weekly Shōnen Jump since July 1997, with its individual chapters compiled in 108 tankōbon volumes as of March 2024. The story follows the adventures of Monkey D. Luffy and his crew, the Straw Hat Pirates,</p>
+                <a href="#" class="btn btn-danger">click</a>
+            </div>
+            </div>
+            </div>
+            <div class="col-sm-3 pt-3 d-flex justify-content-center">
+                <div class="card text-center bg-warning" style="width:400px;height: 100%;">
+               <img src="../Img/bleach.png" alt="" height="40%" width="30%" class="card-img-top">
+            <div class="card-body">
+                <div class="card-title text-danger"><h3>Bleach</h3></div>
+                <p class="text-light">The series adapts Kubo's manga with the main story arcs and introduces anime exclusive ones. In Karakura Town, high school student Ichigo Kurosaki becomes a substitute Soul Reaper (死神, Shinigami, literally, "Death God"), when Rukia Kuchiki risks her life to protect him from a Hollow. Although initially reluctant to accept his responsibility, he takes her place,</p>
+                <a href="#" class="btn btn-danger">click</a>
+            </div>
+            </div>
+            </div>
+    </div>
+    <div class="row pt-3 d-flex justify-content-center">
+        <div class="col-sm-3 pt-3 d-flex justify-content-center">
+            <div class="card text-center bg-warning" style="width:400px;height: 90%;">
+                <img src="../Img/sword-art-online-wallpaper-javjk4u0ar7tbyeu.jpg" alt="" height="40%" width="30%" class="card-img-top">
+                <div class="card-body">
+                    <div class="card-title text-danger"><h3>Sword Art Online</h3></div>
+                    <p class="text-light">The series adapts Kubo's manga with the main story arcs and introduces anime exclusive ones. In Karakura Town, high school student Ichigo Kurosaki becomes a substitute Soul Reaper (死神, Shinigami, literally, "Death God"), when Rukia Kuchiki risks her life to protect him from a Hollow. Although initially reluctant to accept his responsibility, he takes her place, and during this time they discover that a few classmates are spiritually aware and have their own powers:</p>
+                    <a href="#" class="btn btn-danger">click</a>
+        </div>
+        </div>
+        </div>
+        <div class="col-sm-3 pt-3 d-flex justify-content-center">
+            <div class="card text-center bg-warning" style="width:400px; height: 90%;">
+           <img src="../Img/horimiya.jpg" alt="" height="40%" width="30%" class="card-img-top">
+        <div class="card-body">
+            <div class="card-title text-danger"><h3>Horimiya</h3></div>
+            <p class="text-light">The story revolves around two high school students, one of which is Kyouko Hori, a bright and popular student, in contrast to her classmate Izumi Miyamura, a gloomy and seemingly nerdy, glasses-wearing boy. At home, Hori is a homebody who dresses down and looks after her younger brother, Souta. She takes every attempt to hide this from her classmates, as to not disrupt her social status that others have perceived of her and cause others to worry.</p>
+            <a href="#" class="btn btn-danger">click</a>
+        </div>
+        </div>
+        </div>
+        <div class="col-sm-3 pt-3 d-flex justify-content-center">
+            <div class="card text-center bg-warning" style="width:400px; height: 90%;">
+           <img src="../Img/Your lie in april.png" alt="" height="40%" width="30%" class="card-img-top">
+        <div class="card-body">
+            <div class="card-title text-danger"><h3>Your Lie In April</h3></div>
+            <p class="text-light">Fourteen-year-old piano prodigy Kōsei Arima becomes famous after winning several music competitions. When his mother Saki dies, Kōsei has a mental breakdown while performing at a piano recital; this results in him becoming unable to hear the sound of his piano, even though his hearing is otherwise unaffected.</p>
+            <a href="#" class="btn btn-danger">click</a>
+        </div>
+        </div>
+        </div>
+        <div class="col-sm-3 pt-3 d-flex justify-content-center">
+            <div class="card text-center bg-warning" style="width:400px; height: 90%;">
+           <img src="../Img/your name.jpg" alt="" height="40%" width="30%" class="card-img-top">
+        <div class="card-body">
+            <div class="card-title text-danger"><h3>Your Name</h3></div>
+            <p class="text-light">Two teenagers share a profound, magical connection upon discovering they are swapping bodies. Things manage to become even more complicated when the boy and girl decide to meet in person.</p>
+            <a href="#" class="btn btn-danger mt-5">click</a>
+        </div>
+        </div>
+        </div>
+    </div>
+    <div class="row pt-3d-flex justify-content-center">
+        <div class="col-sm-3 pt-3 d-flex justify-content-center">
+            <div class="card text-center bg-warning" style="width:400px; height: 80%;">
+           <img src="../Img/fairy-tail-pictures.jpg" alt="" height="40%" width="30%" class="card-img-top">
+        <div class="card-body">
+            <div class="card-title text-danger"><h3>Fairy Tail</h3></div>
+            <p class="text-light">The world of Earth-land is home to numerous guilds where wizards[b] apply their magic for paid job requests. Natsu Dragneel, a Dragon Slayer wizard from the Fairy Tail guild, explores the Kingdom of Fiore in search of his missing adoptive father, the dragon Igneel. During his journey, he befriends a young celestial wizard named Lucy Heartfilia and invites her to join Fairy Tail. Natsu, Lucy, and the cat-like Exceed Happy form a team, which is joined by other guild members: Gray Fullbuster, an ice wizard; .</p>
+            <a href="#" class="btn btn-danger">click</a>
+        </div>
+        </div>
+        </div>
+        <div class="col-sm-3 pt-3 d-flex justify-content-center">
+            <div class="card text-center bg-warning" style="width:400px; height: 80%;">
+           <img src="../Img/re zero.jpeg" alt="" height="40%" width="30%" class="card-img-top">
+        <div class="card-body">
+            <div class="card-title text-danger"><h3>RE:Zero</h3></div>
+            <p class="text-light">Motivated by a desire to become the next Wizard King, an authority figure second to the king of Clover Kingdom, the two youths developed a friendly rivalry. Yuno obtains a legendary four-leaf grimoire held by the kingdom's first Wizard King. The four-leaf grimoire is a rare grimoire, only given to the most immense mages. Asta, despite his lack of magic, obtained an enigmatic five-leaf grimoire that contains mysterious elf swords and a bodiless member of the Devil race who utilizes rare anti-magic. </p>
+            <a href="#" class="btn btn-danger">click</a>
+        </div>
+        </div>
+        </div>
+        <div class="col-sm-3 pt-3 d-flex justify-content-center">
+            <div class="card text-center bg-warning" style="width:400px; height: 80%;">
+           <img src="../Img/black-clover-characters-aqieuq6k2ol4mn4w.jpg" alt="" height="40%" width="30%" class="card-img-top">
+        <div class="card-body">
+            <div class="card-title text-danger"><h3>Black Clover</h3></div>
+            <p class="text-light">Motivated by a desire to become the next Wizard King, an authority figure second to the king of Clover Kingdom, the two youths developed a friendly rivalry. Yuno obtains a legendary four-leaf grimoire held by the kingdom's first Wizard King. The four-leaf grimoire is a rare grimoire, only given to the most immense mages. Asta, despite his lack of magic, obtained an enigmatic five-leaf grimoire that contains mysterious elf swords and a bodiless member of the Devil race who utilizes rare anti-magic. </p>
+            <a href="#" class="btn btn-danger">click</a>
+        </div>
+        </div>
+        </div>
+        <div class="col-sm-3 pt-3 d-flex justify-content-center">
+            <div class="card text-center bg-warning" style="width:400px; height: 80%;">
+           <img src="../Img/jobless reincarnation.jpg" alt="" height="40%" width="30%" class="card-img-top">
+        <div class="card-body">
+            <div class="card-title text-danger"><h3>Jobless Reincarnation</h3></div>
+            <p class="text-light">A 34-year-old underachiever gets run over by a bus, but his story isn't over. Reincarnated as an infant, he'll embark on an epic adventure.As Rudeus finally feels like he has found his place in the world, a major magical catastrophe destroys his nation, teleporting and stranding hundreds of thousands of people far from home‚ some into dangerous places or situations, resulting in their deaths due to murder, war, execution, monster attack, or exposure to the elements. </p>
+            <a href="#" class="btn btn-danger">click</a>
+        </div>
+        </div>
+        </div>
+        <footer class="bg-dark">
+            <p class="d-flex justify-content-end text-light">created by:Yashraj</p>
+            <p class="d-flex justify-content-end"><a href="mailto:yashrajmusale34@gmail.com">yashrajmusale34@gmail.com</a></p>
+        </footer>
+    </div>
+</body>
+</html>
